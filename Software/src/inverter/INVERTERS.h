@@ -17,6 +17,10 @@
   #include "SOFAR-CAN.h"
 #endif
 
+#ifdef GOODWE_CAN
+  #include "GOODWE-CAN.h"
+#endif
+
 #ifdef PYLON_CAN
   #include "PYLON-CAN.h"
 #endif
