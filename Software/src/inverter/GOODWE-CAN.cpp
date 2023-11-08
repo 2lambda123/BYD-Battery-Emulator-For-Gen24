@@ -73,7 +73,7 @@ void receive_can_goodwe(CAN_frame_t rx_frame)
   switch (rx_frame.MsgID)
   {
     case 0x420: //Message originating from GW6000-EH. Indicates timeout
-		//Todo, add USB debug message if this happens?
+		Serial.println("ERROR: The inverter GW6000-EH has detected a timeout of necessary CAN messages!");
     break;
 	case 0x425: //Inverter Vbat, Ibat
 		//inverter_voltage = frame0 and frame 1
