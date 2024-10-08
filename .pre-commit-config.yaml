@@ -5,7 +5,7 @@ exclude: '^Software/src/lib/'  # don't run hooks on external libraries
 
 repos:
 - repo: https://github.com/pre-commit/mirrors-clang-format
-  rev: v19.1.0
+  rev: v19.1.1
   hooks:
   - id: clang-format
     args: [-Werror]  # change formatting warnings to errors, hook includes -i (Inplace edit) by default
